@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Copse' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: 'Copse'; font-size: 20px;
+        }
+    </style>
+    <h1>NBA Trivia</h1>
+    <div class=row id="start-screen">
+        <p>Click the button to Start NBA Trivia</p>
+        <button type="button" class="start" id="start-btn">Start Game</button>
+    </div>
+    <div class="row" id="main-content">
+        <div class=row>
+            <p class="time">Time left: <div class="timer"></div>
+            </p>
+        </div>
+        <div class="row" id="fill">
+            <p class="question">Question goes here</p>
+        </div>
+        <div class="row">
+            <button type="button" class="answer" id="answer1"></button>
+            <button type="button" class="answer" id="answer2"></button>
+            <button type="button" class="answer" id="answer3"></button>
+            <button type="button" class="answer" id="answer4"></button>
+        </div>
+    </div>
+    <br>
+    </div>
+    <div class="scoreboard">
+        <h2>Correct: <div class='wins'></div>
+        </h2>
+        <h2>Incorrect: <div class='losses'></div>
+        </h2>
+        <h2>Turnovers: <div class='not-answered'></div></h2>
+        <button type="button" class="replay"> Restart</button>
+    </div>
+
+
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>

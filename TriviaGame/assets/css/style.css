@@ -1,0 +1,70 @@
+body {
+    background-image: url("http://i.imgur.com/WYewr61.jpg?1");
+    background-size: 100%;
+}
+
+h1 {
+    border: solid 5px grey;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(210, 221, 231);
+    margin-left: 200px;
+    margin-right: 200px;
+
+
+}
+
+#start-btn {
+    background-color: orange;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    padding: 10px;
+
+}
+
+#start-screen {
+    border: solid 5px grey;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(210, 221, 231);
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#main-content {
+    border: solid 5px grey;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(210, 221, 231);
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.answer{
+    display: block;
+    font-size:20px;
+    align-self: auto;
+    background-color: orange;
+    font-style: bold;
+}
+
+.question{
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+.timer {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(214, 88, 88);
+}
+
+.scoreboard {
+    border: solid 5px grey;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(210, 221, 231);
+    margin: center;
+}
