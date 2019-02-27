@@ -97,7 +97,7 @@ var setQuestion = function () {
 }
 
 var questionTimer = function () {
-    secondsLeft = 1;
+    secondsLeft = 25;
     intervalId = setInterval(shotClock, 1000);
 }
 
@@ -108,7 +108,7 @@ var runGame = function () {
 }
 
 var postTimer = function () {
-    secondsLeft = 1;
+    secondsLeft = 4;
     intervalId = setInterval(restClock, 1000);
     $('.answer').removeAttr('disabled');
 }
@@ -121,9 +121,7 @@ var shotClock = function () {
         stop();
         notAnswered++;
 
-        
-
-        $('.answer').prop('disabled');
+        $('.answer').addClass('disabled');
 
         $('.timer').text('Shot Clock Violation!');
         postTimer();
@@ -156,7 +154,7 @@ $("#start-btn").click(function () {
     runGame();
 });
 
-$(".answer").on('click', function () {
+$(".answer").click(function () {
     $('.answer').prop('disabled');
     stop();
     postTimer();
@@ -178,11 +176,14 @@ $(".answer").on('click', function () {
 
 
 
-$('#replay').on('click', function () {
+$('#replay').click(function () {
     questionCounter = 0;
     wins = 0;
     losses = 0;
     notAnswered = 0;
+
+    $('.scoreboard').hide();
+    $('#main-content').show();
 
     runGame();
 })

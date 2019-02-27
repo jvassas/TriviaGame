@@ -40,12 +40,20 @@ h1 {
     margin-right: 150px;
 }
 
+.answer:hover {
+    background-color: orange;
+    color: black;
+}
 .answer{
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     font-size:20px;
-    align-self: auto;
-    background-color: orange;
+    background-color: white;
     font-style: bold;
+    width: 100%;
+    border: solid 1px black;
+    padding: 10px;
 }
 
 .question{
@@ -67,4 +75,13 @@ h1 {
     padding: 20px;
     background-color: rgb(210, 221, 231);
     margin: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.replay {
+    background-color: orange;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    padding: 10px;
 }
